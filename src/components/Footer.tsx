@@ -2,9 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { 
-  Facebook, 
   Instagram, 
-  Twitter, 
   Phone, 
   Mail, 
   MapPin,
@@ -36,14 +34,16 @@ const Footer = () => {
               Experience the magic of Tanzania with our expert guides. From the Serengeti's endless plains to Kilimanjaro's snow-capped peak, we create unforgettable safari memories.
             </p>
             <div className="flex space-x-3">
-              <a href="#" className="p-2 bg-primary-foreground/10 rounded-full hover:bg-primary-foreground/20 safari-transition">
-                <Facebook className="h-4 w-4" />
-              </a>
-              <a href="#" className="p-2 bg-primary-foreground/10 rounded-full hover:bg-primary-foreground/20 safari-transition">
+              <a href="https://www.instagram.com/namir_tours_and_travel?igsh=MXZkNG56NGFiZGcxMg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="p-2 bg-primary-foreground/10 rounded-full hover:bg-primary-foreground/20 safari-transition">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="p-2 bg-primary-foreground/10 rounded-full hover:bg-primary-foreground/20 safari-transition">
-                <Twitter className="h-4 w-4" />
+              <a href="http://www.tiktok.com/@namir.tours.and.travel" target="_blank" rel="noopener noreferrer" className="p-2 bg-primary-foreground/10 rounded-full hover:bg-primary-foreground/20 safari-transition">
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </a>
+              <a href="mailto:namirtourtravel@gmail.com" className="p-2 bg-primary-foreground/10 rounded-full hover:bg-primary-foreground/20 safari-transition">
+                <Mail className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 opacity-80" />
-                <span className="opacity-80">info@namirtours.com</span>
+                <a href="mailto:namirtourtravel@gmail.com" className="opacity-80 hover:opacity-100 safari-transition">namirtourtravel@gmail.com</a>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 opacity-80 mt-0.5" />
