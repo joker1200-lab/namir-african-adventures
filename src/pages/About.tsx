@@ -19,11 +19,11 @@ const About = () => {
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <div className="max-w-4xl mx-auto animate-safari-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              About Namir Tour & Safari
+              About NAMIR TOURS AND TRAVEL
             </h1>
             <p className="text-xl leading-relaxed opacity-90">
-              Your trusted partner for authentic Tanzania safari adventures since 2009. 
-              We're passionate about sharing the magic of our homeland with travelers from around the world.
+              Your trusted partner for authentic Tanzania safari adventures since 2024. 
+              We're passionate about creating unforgettable experiences and sharing the magic of Tanzania with travelers worldwide.
             </p>
           </div>
         </div>
@@ -39,19 +39,25 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2009 by local Tanzanian guides who grew up in the shadows of Mount Kilimanjaro, 
-                  Namir Tour & Safari was born from a deep love for Tanzania's incredible wildlife and landscapes. 
-                  Our name "Namir" means "leopard" in Swahili, symbolizing the grace, strength, and stealth 
-                  required for exceptional safari experiences.
+                  Founded in 2024 by young visionary entrepreneur Ramadhan Hashim Ramadhan, NAMIR TOURS AND TRAVEL 
+                  represents the new generation of Tanzanian tourism. At just 23 years old, Ramadhan brings fresh 
+                  energy, innovative approaches, and deep passion for showcasing Tanzania's incredible beauty to the world.
                 </p>
                 <p>
-                  What started as a small family business has grown into one of Tanzania's most trusted tour 
-                  operators, but we've never lost sight of our core values: authentic experiences, expert 
-                  local knowledge, and genuine care for our guests and the environment.
+                  Based in Dar es Salaam with operations throughout Tanzania, our company was born from Ramadhan's 
+                  3+ years of hands-on experience in the tourism industry. His dedication to excellence and customer 
+                  satisfaction has quickly established NAMIR TOURS AND TRAVEL as a reliable and professional operator 
+                  in Tanzania's competitive safari market.
                 </p>
                 <p>
-                  Today, we're proud to be a licensed member of TATO (Tanzania Association of Tour Operators) 
-                  and have helped over 500 travelers create unforgettable memories in the heart of East Africa.
+                  Our name "Namir" means "leopard" in Swahili, symbolizing the grace, agility, and keen observation 
+                  required for exceptional safari experiences. We combine youthful innovation with traditional 
+                  hospitality to create authentic, memorable adventures for our guests.
+                </p>
+                <p>
+                  As a licensed tour operator, we're committed to sustainable tourism practices, supporting local 
+                  communities, and delivering personalized experiences that exceed expectations. Every safari is 
+                  crafted with attention to detail and genuine care for our guests' satisfaction.
                 </p>
               </div>
               <div className="mt-8">
@@ -153,25 +159,26 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Joseph Mwalimu",
-                role: "Founder & Lead Guide",
-                experience: "15+ Years Experience",
-                specialty: "Big Five & Migration Expert",
-                description: "Born in Arusha, Joseph has been guiding safaris since 2009. His deep knowledge of animal behavior and migration patterns makes him one of Tanzania's most sought-after guides."
+                name: "Ramadhan Hashim Ramadhan",
+                role: "CEO & Operational Manager",
+                age: "23 Years Old",
+                experience: "3+ Years Experience",
+                specialty: "Safari Operations & Customer Excellence",
+                description: "Young, dynamic founder of NAMIR TOURS AND TRAVEL based in Dar es Salaam. Ramadhan combines fresh perspectives with hands-on tourism experience to deliver exceptional safari adventures. His commitment to innovation and customer satisfaction drives the company's success."
               },
               {
-                name: "Grace Kilonzo",
-                role: "Operations Manager",
-                experience: "10+ Years Experience", 
-                specialty: "Cultural Tours & Logistics",
-                description: "Grace ensures every detail of your safari is perfectly planned. Her expertise in cultural tourism and logistics coordination guarantees smooth, authentic experiences."
+                name: "Joseph Mwalimu",
+                role: "Senior Safari Guide",
+                experience: "8+ Years Experience",
+                specialty: "Big Five & Migration Expert",
+                description: "Expert wildlife tracker with deep knowledge of animal behavior. Joseph's passion for conservation and storytelling brings every safari to life with unforgettable moments and insights."
               },
               {
                 name: "Daniel Mollel",
                 role: "Kilimanjaro Specialist",
-                experience: "12+ Years Experience",
+                experience: "10+ Years Experience",
                 specialty: "Mountain Climbing & Safety",
-                description: "A certified mountain guide with over 200 successful Kilimanjaro summits. Daniel's expertise in high-altitude trekking ensures safe and successful climbs."
+                description: "Certified mountain guide with over 200 successful Kilimanjaro summits. Daniel's expertise in high-altitude trekking and wilderness safety ensures climbers achieve their summit dreams."
               }
             ].map((member, index) => (
               <Card 
@@ -187,6 +194,7 @@ const About = () => {
                     <h3 className="text-xl font-bold text-primary">{member.name}</h3>
                     <p className="text-safari-teal font-semibold">{member.role}</p>
                     <p className="text-sm text-muted-foreground">{member.experience}</p>
+                    {member.age && <p className="text-xs text-muted-foreground">{member.age}</p>}
                   </div>
                   <div className="bg-secondary/50 rounded-lg p-3">
                     <p className="text-sm font-semibold text-primary mb-1">Specialty</p>
@@ -216,20 +224,20 @@ const About = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold">500+</div>
+              <div className="text-4xl font-bold">100+</div>
               <div className="text-sm opacity-80">Happy Travelers</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold">15+</div>
-              <div className="text-sm opacity-80">Years Experience</div>
+              <div className="text-4xl font-bold">2024</div>
+              <div className="text-sm opacity-80">Founded</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold">4.9</div>
-              <div className="text-sm opacity-80">Average Rating</div>
+              <div className="text-4xl font-bold">5.0</div>
+              <div className="text-sm opacity-80">Customer Rating</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold">99%</div>
-              <div className="text-sm opacity-80">Success Rate</div>
+              <div className="text-4xl font-bold">100%</div>
+              <div className="text-sm opacity-80">Commitment</div>
             </div>
           </div>
         </div>
@@ -247,10 +255,20 @@ const About = () => {
               Your authentic African adventure awaits.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="px-8">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="px-8"
+                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20plan%20my%20safari%20with%20NAMIR%20TOURS%20AND%20TRAVEL', '_blank')}
+              >
                 Plan Your Safari
               </Button>
-              <Button variant="outline" size="lg" className="px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20get%20more%20information%20about%20your%20services', '_blank')}
+              >
                 Contact Us Today
               </Button>
             </div>

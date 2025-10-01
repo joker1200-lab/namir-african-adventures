@@ -136,10 +136,20 @@ const FeaturedTours = () => {
                 </div>
 
                 <div className="flex space-x-3 pt-2">
-                  <Button variant="outline" size="sm" className="flex-1">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="flex-1"
+                    onClick={() => window.open(`https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20learn%20more%20about%20${encodeURIComponent(tour.title)}`, '_blank')}
+                  >
                     Learn More
                   </Button>
-                  <Button variant="safari" size="sm" className="flex-1">
+                  <Button 
+                    variant="safari" 
+                    size="sm" 
+                    className="flex-1"
+                    onClick={() => window.open(`https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20book%20${encodeURIComponent(tour.title)}`, '_blank')}
+                  >
                     Book Now
                   </Button>
                 </div>

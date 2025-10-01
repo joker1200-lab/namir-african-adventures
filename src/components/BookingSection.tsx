@@ -21,10 +21,24 @@ const BookingSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Create WhatsApp message
+    const message = `Hi! I'd like to book a safari.
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Tour: ${formData.tour}
+Travelers: ${formData.travelers}
+Date: ${formData.date}
+Message: ${formData.message}`;
+    
+    window.open(`https://wa.me/+255123456789?text=${encodeURIComponent(message)}`, '_blank');
+    
     toast({
-      title: "Booking Request Submitted!",
-      description: "We'll contact you within 24 hours to confirm your safari adventure.",
+      title: "Redirecting to WhatsApp!",
+      description: "Complete your booking request via WhatsApp.",
     });
+    
     // Reset form
     setFormData({
       name: "",

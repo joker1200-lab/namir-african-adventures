@@ -238,10 +238,20 @@ const Tours = () => {
                     </div>
 
                     <div className="flex space-x-2 pt-2">
-                      <Button variant="outline" size="sm" className="flex-1">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1"
+                        onClick={() => window.open(`https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20details%20about%20${encodeURIComponent(tour.title)}`, '_blank')}
+                      >
                         View Details
                       </Button>
-                      <Button variant="safari" size="sm" className="flex-1">
+                      <Button 
+                        variant="safari" 
+                        size="sm" 
+                        className="flex-1"
+                        onClick={() => window.open(`https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20book%20${encodeURIComponent(tour.title)}`, '_blank')}
+                      >
                         Book Now
                       </Button>
                     </div>
@@ -272,10 +282,20 @@ const Tours = () => {
               Let our experts design your dream Tanzania adventure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg" className="px-8">
+              <Button 
+                variant="secondary" 
+                size="lg" 
+                className="px-8"
+                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20create%20a%20custom%20itinerary', '_blank')}
+              >
                 Custom Itinerary
               </Button>
-              <Button variant="outline" size="lg" className="px-8 border-white text-white hover:bg-white hover:text-primary">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="px-8 border-white text-white hover:bg-white hover:text-primary"
+                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20speak%20with%20a%20safari%20expert', '_blank')}
+              >
                 Contact Our Experts
               </Button>
             </div>
