@@ -8,7 +8,7 @@ import { Clock, Users, Star, MapPin, Calendar, Check } from "lucide-react";
 const TourDetails = () => {
   const [searchParams] = useSearchParams();
   const tourId = searchParams.get("id");
-  const whatsappNumber = "+255123456789";
+  const whatsappNumber = "+255765131391";
 
   return (
     <Layout>

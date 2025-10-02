@@ -71,7 +71,7 @@ const HeroSection = () => {
               size="lg" 
               variant="safari" 
               className="px-8 py-6 text-lg"
-              onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20start%20planning%20my%20safari%20adventure', '_blank')}
+              onClick={() => window.open('https://wa.me/+255765131391?text=Hi!%20I%27d%20like%20to%20start%20planning%20my%20safari%20adventure', '_blank')}
             >
               Start Your Safari
               <ArrowRight className="h-5 w-5" />

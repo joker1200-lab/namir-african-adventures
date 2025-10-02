@@ -23,7 +23,7 @@ const customOptions = [
 
 const CustomSafariSection = () => {
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
-  const whatsappNumber = "+255123456789";
+  const whatsappNumber = "+255765131391";
 
   const toggleOption = (id: string) => {
     setSelectedOptions(prev =>

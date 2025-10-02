@@ -34,7 +34,7 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>+255 123 456 789</span>
+              <span>+255 765 131 391</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
@@ -61,7 +61,7 @@ const Header = () => {
           </div>
           <div className="flex items-center space-x-4">
             <div className="text-xs">
-              📍 Arusha, Tanzania | Licensed Tour Operator
+              📍 Dar es Salaam, Tanzania | Licensed Tour Operator
             </div>
             {/* Language Dropdown */}
             <div className="relative">
@@ -106,7 +106,7 @@ const Header = () => {
               className="h-12 w-12 rounded-full object-cover"
             />
             <div>
-              <h1 className="text-xl font-bold text-primary">Namir Tour & Safari</h1>
+              <h1 className="text-xl font-bold text-primary">Namir Tours & Travel</h1>
               <p className="text-xs text-muted-foreground">Authentic Tanzania Adventures</p>
             </div>
           </Link>

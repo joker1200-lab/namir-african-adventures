@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -108,6 +109,12 @@ const tours = [
 ];
 
 const Tours = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All Tours");
+
+  const filteredTours = selectedCategory === "All Tours" 
+    ? tours 
+    : tours.filter(tour => tour.category === selectedCategory);
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -129,7 +136,7 @@ const Tours = () => {
                 ⭐ 4.9/5 Rating
               </Badge>
               <Badge className="bg-white/20 text-white border-white/30">
-                🌍 500+ Happy Travelers
+                🌍 50+ Happy Travelers
               </Badge>
             </div>
           </div>
@@ -141,16 +148,46 @@ const Tours = () => {
         <div className="container mx-auto px-4">
           {/* Filter Categories */}
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button variant="safari" size="sm">All Tours</Button>
-            <Button variant="outline" size="sm">Wildlife Safari</Button>
-            <Button variant="outline" size="sm">Mountain Climbing</Button>
-            <Button variant="outline" size="sm">Beach & Culture</Button>
-            <Button variant="outline" size="sm">Combo Packages</Button>
+            <Button 
+              variant={selectedCategory === "All Tours" ? "safari" : "outline"} 
+              size="sm"
+              onClick={() => setSelectedCategory("All Tours")}
+            >
+              All Tours
+            </Button>
+            <Button 
+              variant={selectedCategory === "Wildlife Safari" ? "safari" : "outline"} 
+              size="sm"
+              onClick={() => setSelectedCategory("Wildlife Safari")}
+            >
+              Wildlife Safari
+            </Button>
+            <Button 
+              variant={selectedCategory === "Mountain Climbing" ? "safari" : "outline"} 
+              size="sm"
+              onClick={() => setSelectedCategory("Mountain Climbing")}
+            >
+              Mountain Climbing
+            </Button>
+            <Button 
+              variant={selectedCategory === "Beach & Culture" ? "safari" : "outline"} 
+              size="sm"
+              onClick={() => setSelectedCategory("Beach & Culture")}
+            >
+              Beach & Culture
+            </Button>
+            <Button 
+              variant={selectedCategory === "Combo Packages" ? "safari" : "outline"} 
+              size="sm"
+              onClick={() => setSelectedCategory("Combo Packages")}
+            >
+              Combo Packages
+            </Button>
           </div>
 
           {/* Tours Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {tours.map((tour, index) => {
+            {filteredTours.map((tour, index) => {
               const IconComponent = tour.icon;
               return (
                 <Card 
@@ -242,7 +279,7 @@ const Tours = () => {
                         variant="outline" 
                         size="sm" 
                         className="flex-1"
-                        onClick={() => window.open(`https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20details%20about%20${encodeURIComponent(tour.title)}`, '_blank')}
+                        onClick={() => window.open(`https://wa.me/+255765131391?text=Hi!%20I%27d%20like%20details%20about%20${encodeURIComponent(tour.title)}`, '_blank')}
                       >
                         View Details
                       </Button>
@@ -250,7 +287,7 @@ const Tours = () => {
                         variant="safari" 
                         size="sm" 
                         className="flex-1"
-                        onClick={() => window.open(`https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20book%20${encodeURIComponent(tour.title)}`, '_blank')}
+                        onClick={() => window.open(`https://wa.me/+255765131391?text=Hi!%20I%27d%20like%20to%20book%20${encodeURIComponent(tour.title)}`, '_blank')}
                       >
                         Book Now
                       </Button>
@@ -286,7 +323,7 @@ const Tours = () => {
                 variant="secondary" 
                 size="lg" 
                 className="px-8"
-                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20create%20a%20custom%20itinerary', '_blank')}
+                onClick={() => window.open('https://wa.me/+255765131391?text=Hi!%20I%27d%20like%20to%20create%20a%20custom%20itinerary', '_blank')}
               >
                 Custom Itinerary
               </Button>
@@ -294,7 +331,7 @@ const Tours = () => {
                 variant="outline" 
                 size="lg" 
                 className="px-8 border-white text-white hover:bg-white hover:text-primary"
-                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20speak%20with%20a%20safari%20expert', '_blank')}
+                onClick={() => window.open('https://wa.me/+255765131391?text=Hi!%20I%27d%20like%20to%20speak%20with%20a%20safari%20expert', '_blank')}
               >
                 Contact Our Experts
               </Button>

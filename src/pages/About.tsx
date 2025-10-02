@@ -224,7 +224,7 @@ const About = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold">100+</div>
+              <div className="text-4xl font-bold">50+</div>
               <div className="text-sm opacity-80">Happy Travelers</div>
             </div>
             <div className="space-y-2">
@@ -236,8 +236,8 @@ const About = () => {
               <div className="text-sm opacity-80">Customer Rating</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold">100%</div>
-              <div className="text-sm opacity-80">Commitment</div>
+              <div className="text-4xl font-bold">2+</div>
+              <div className="text-sm opacity-80">Years Experience</div>
             </div>
           </div>
         </div>
@@ -259,7 +259,7 @@ const About = () => {
                 variant="hero" 
                 size="lg" 
                 className="px-8"
-                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20plan%20my%20safari%20with%20NAMIR%20TOURS%20AND%20TRAVEL', '_blank')}
+                onClick={() => window.open('https://wa.me/+255765131391?text=Hi!%20I%27d%20like%20to%20plan%20my%20safari%20with%20NAMIR%20TOURS%20AND%20TRAVEL', '_blank')}
               >
                 Plan Your Safari
               </Button>
@@ -267,7 +267,7 @@ const About = () => {
                 variant="outline" 
                 size="lg" 
                 className="px-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                onClick={() => window.open('https://wa.me/+255123456789?text=Hi!%20I%27d%20like%20to%20get%20more%20information%20about%20your%20services', '_blank')}
+                onClick={() => window.open('https://wa.me/+255765131391?text=Hi!%20I%27d%20like%20to%20get%20more%20information%20about%20your%20services', '_blank')}
               >
                 Contact Us Today
               </Button>

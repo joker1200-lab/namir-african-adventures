@@ -9,54 +9,30 @@ const guides = [
     name: "Ramadhan Hashim Ramadhan",
     role: "CEO & Operational Manager",
     age: 23,
-    location: "Dar es Salaam",
-    experience: "3+ Years",
-    specialty: "Safari Operations & Customer Experience",
-    rating: 5.0,
-    tours: "100+ Tours Led",
-    languages: ["English", "Swahili", "French"],
-    description: "Young and passionate founder of NAMIR TOURS AND TRAVEL. Despite his age, Ramadhan brings fresh energy and innovative approaches to safari tourism while maintaining traditional hospitality values.",
-    achievements: ["Founded Company 2024", "Licensed Tour Operator", "100% Customer Satisfaction"],
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop"
+    location: "Dar es Salaam, Tanzania",
+    experience: "2+ Years",
+    specialty: "Safari Operations & Customer Experience"
   },
   {
     id: 2,
-    name: "Joseph Mwalimu",
-    role: "Senior Safari Guide",
-    experience: "8+ Years",
-    specialty: "Big Five & Wildlife Tracking",
-    rating: 4.9,
-    tours: "300+ Tours Led",
-    languages: ["English", "Swahili", "German"],
-    description: "Expert wildlife tracker with encyclopedic knowledge of animal behavior. Joseph's passion for conservation and storytelling brings safaris to life.",
-    achievements: ["Wildlife Photography Expert", "Conservation Advocate", "Bird Watching Specialist"],
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop"
+    name: "Azim Murtaza Fidahussein",
+    role: "Finance Specialist",
+    experience: "2+ Years",
+    specialty: "Financial Management & Operations"
   },
   {
     id: 3,
-    name: "Daniel Mollel",
-    role: "Kilimanjaro Climbing Guide",
-    experience: "10+ Years",
-    specialty: "Mountain Climbing & Safety",
-    rating: 4.9,
-    tours: "250+ Successful Summits",
-    languages: ["English", "Swahili"],
-    description: "Certified mountain guide with exceptional safety record. Daniel's encouragement and expertise help climbers achieve their Kilimanjaro dreams.",
-    achievements: ["250+ Summit Success", "Wilderness First Aid Certified", "Altitude Medicine Training"],
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop"
+    name: "Julio John",
+    role: "Safari Guide",
+    experience: "2+ Years",
+    specialty: "Wildlife & Safari Experiences"
   },
   {
     id: 4,
-    name: "Grace Kimaro",
-    role: "Cultural Tourism Specialist",
-    experience: "6+ Years",
-    specialty: "Maasai Culture & Community Tours",
-    rating: 4.8,
-    tours: "200+ Cultural Tours",
-    languages: ["English", "Swahili", "Maa"],
-    description: "Bridging cultures with warmth and authenticity. Grace provides deep insights into Tanzania's rich cultural heritage and Maasai traditions.",
-    achievements: ["Community Development Advocate", "Cultural Ambassador", "Women's Empowerment Leader"],
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop"
+    name: "Nagib Abdul Dollah",
+    role: "Tour Coordinator",
+    experience: "2+ Years",
+    specialty: "Tour Planning & Coordination"
   }
 ];
 
@@ -88,8 +64,6 @@ const stories = [
 ];
 
 const SafariGuides = () => {
-  const whatsappNumber = "+255123456789";
-  const requestGuideMessage = encodeURIComponent("Hi! I'd like to request a specific guide for my safari tour.");
 
   return (
     <section className="py-20 bg-gradient-to-br from-background to-secondary/20">
@@ -113,32 +87,17 @@ const SafariGuides = () => {
               className="group overflow-hidden safari-shadow hover:warm-shadow safari-transition animate-safari-scale-in border-0"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative overflow-hidden">
-                <img 
-                  src={guide.image} 
-                  alt={guide.name}
-                  className="w-full h-64 object-cover group-hover:scale-110 safari-transition"
-                />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                  <Star className="h-4 w-4 text-yellow-500 fill-current" />
-                  <span className="text-sm font-semibold">{guide.rating}</span>
+              <CardContent className="p-8 space-y-4 text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-safari-gold to-safari-teal rounded-full mx-auto flex items-center justify-center text-white text-2xl font-bold">
+                  {guide.name.split(' ').map(n => n[0]).join('')}
                 </div>
-                {index === 0 && (
-                  <div className="absolute top-4 left-4">
-                    <Badge className="bg-safari-gold text-primary font-bold">
-                      Founder
-                    </Badge>
-                  </div>
-                )}
-              </div>
-              
-              <CardContent className="p-6 space-y-4">
+                
                 <div>
-                  <h3 className="text-lg font-bold text-primary mb-1">
+                  <h3 className="text-xl font-bold text-primary mb-1">
                     {guide.name}
                   </h3>
-                  <p className="text-sm text-safari-teal font-semibold">{guide.role}</p>
-                  {guide.age && (
+                  <p className="text-sm text-safari-teal font-semibold mb-2">{guide.role}</p>
+                  {guide.age && guide.location && (
                     <p className="text-xs text-muted-foreground">Age: {guide.age} • {guide.location}</p>
                   )}
                 </div>
@@ -148,42 +107,14 @@ const SafariGuides = () => {
                     <span className="text-muted-foreground">Experience:</span>
                     <span className="font-semibold text-primary">{guide.experience}</span>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Tours Led:</span>
-                    <span className="font-semibold text-primary">{guide.tours}</span>
-                  </div>
                 </div>
 
-                <p className="text-muted-foreground text-xs leading-relaxed line-clamp-3">
-                  {guide.description}
-                </p>
-
-                <div>
-                  <div className="text-xs text-muted-foreground mb-2">Specialty:</div>
-                  <Badge variant="secondary" className="text-xs">
+                <div className="bg-secondary/50 rounded-lg p-3">
+                  <div className="text-xs text-muted-foreground mb-1">Specialty</div>
+                  <p className="text-sm font-semibold text-primary">
                     {guide.specialty}
-                  </Badge>
+                  </p>
                 </div>
-
-                <div>
-                  <div className="text-xs text-muted-foreground mb-2">Languages:</div>
-                  <div className="flex flex-wrap gap-1">
-                    {guide.languages.map((lang, i) => (
-                      <Badge key={i} variant="outline" className="text-xs">
-                        {lang}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-
-                <Button 
-                  variant="safari" 
-                  size="sm" 
-                  className="w-full"
-                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${requestGuideMessage}`, '_blank')}
-                >
-                  Request This Guide
-                </Button>
               </CardContent>
             </Card>
           ))}

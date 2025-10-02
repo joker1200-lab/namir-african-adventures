@@ -32,7 +32,7 @@ Travelers: ${formData.travelers}
 Date: ${formData.date}
 Message: ${formData.message}`;
     
-    window.open(`https://wa.me/+255123456789?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/+255765131391?text=${encodeURIComponent(message)}`, '_blank');
     
     toast({
       title: "Redirecting to WhatsApp!",

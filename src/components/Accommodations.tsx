@@ -73,7 +73,7 @@ const accommodations = [
 ];
 
 const Accommodations = () => {
-  const whatsappNumber = "+255123456789";
+  const whatsappNumber = "+255765131391";
   const whatsappMessage = encodeURIComponent("Hi! I'd like to inquire about accommodation options for my safari.");
 
   return (

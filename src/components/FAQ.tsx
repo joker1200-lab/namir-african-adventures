@@ -88,10 +88,10 @@ const FAQ = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="tel:+255123456789" 
+              href="tel:+255765131391" 
               className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg safari-transition hover:bg-primary/90 safari-shadow"
             >
-              📞 Call +255 123 456 789
+              📞 Call +255 765 131 391
             </a>
             <a 
               href="mailto:info@namirtours.com" 
