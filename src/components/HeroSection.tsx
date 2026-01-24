@@ -52,15 +52,15 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 text-center">
             <div className="space-y-1">
-              <div className="text-2xl md:text-3xl font-bold">500+</div>
+              <div className="text-2xl md:text-3xl font-bold">50+</div>
               <div className="text-sm opacity-80">Happy Travelers</div>
             </div>
             <div className="space-y-1">
-              <div className="text-2xl md:text-3xl font-bold">15+</div>
+              <div className="text-2xl md:text-3xl font-bold">2+</div>
               <div className="text-sm opacity-80">Years Experience</div>
             </div>
             <div className="space-y-1">
-              <div className="text-2xl md:text-3xl font-bold">4.9</div>
+              <div className="text-2xl md:text-3xl font-bold">5.0</div>
               <div className="text-sm opacity-80">Star Rating</div>
             </div>
           </div>
