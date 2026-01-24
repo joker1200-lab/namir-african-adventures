@@ -162,8 +162,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Call Us</h4>
-                        <p className="text-muted-foreground">+255 123 456 789</p>
-                        <p className="text-xs text-muted-foreground">24/7 Emergency Support</p>
+                        <p className="text-muted-foreground">+255 765 131 391</p>
+                        <p className="text-xs text-muted-foreground">Available daily</p>
                       </div>
                     </div>
 
@@ -173,7 +173,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Email Us</h4>
-                        <p className="text-muted-foreground">info@namirtours.com</p>
+                        <p className="text-muted-foreground">namirtourtravel@gmail.com</p>
                         <p className="text-xs text-muted-foreground">Response within 24 hours</p>
                       </div>
                     </div>
@@ -185,7 +185,7 @@ const Contact = () => {
                       <div>
                         <h4 className="font-semibold mb-1">Visit Our Office</h4>
                         <p className="text-muted-foreground">
-                          Arusha, Tanzania<br />
+                          Dar es Salaam, Tanzania<br />
                           East Africa
                         </p>
                         <p className="text-xs text-muted-foreground">By appointment only</p>
@@ -218,7 +218,7 @@ const Contact = () => {
                     For guests currently on safari or urgent matters:
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-primary">📱 +255 987 654 321</p>
+                    <p className="font-semibold text-primary">📱 +255 765 131 391</p>
                     <p className="text-xs text-muted-foreground">Available 24/7 for emergencies</p>
                   </div>
                 </CardContent>
@@ -253,9 +253,9 @@ const Contact = () => {
       <section className="py-20 bg-secondary/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">Find Us in Arusha</h2>
+            <h2 className="text-3xl font-bold text-primary mb-4">Find Us in Dar es Salaam</h2>
             <p className="text-muted-foreground">
-              Our office is located in the heart of Arusha, the safari capital of Tanzania.
+              Our office is located in Dar es Salaam, Tanzania.
             </p>
           </div>
           
@@ -263,7 +263,7 @@ const Contact = () => {
             <div className="text-center text-muted-foreground">
               <MapPin className="h-12 w-12 mx-auto mb-4" />
               <p>Interactive map would be displayed here</p>
-              <p className="text-sm">Showing our location in Arusha, Tanzania</p>
+              <p className="text-sm">Showing our location in Dar es Salaam, Tanzania</p>
             </div>
           </div>
         </div>

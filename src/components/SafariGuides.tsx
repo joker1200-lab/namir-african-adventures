@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Award, Users, Star, Camera, BookOpen, Heart } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const guides = [
   {
@@ -39,7 +40,7 @@ const guides = [
 const stories = [
   {
     title: "The Great Migration Miracle",
-    author: "Joseph Mwalimu",
+    author: "Azim Murtaza Fidahussein",
     excerpt: "Witnessing thousands of wildebeest crossing the Mara River is breathtaking. But one crossing stands out in my memory...",
     date: "March 2024",
     category: "Wildlife",
@@ -47,7 +48,7 @@ const stories = [
   },
   {
     title: "Summit Sunrise on Kilimanjaro",
-    author: "Daniel Mollel",
+    author: "Julio John",
     excerpt: "At 19,341 feet, as the sun rises over Africa, every step of the journey becomes worth it. This is the story of an unforgettable summit...",
     date: "February 2024",
     category: "Adventure",
@@ -55,7 +56,7 @@ const stories = [
   },
   {
     title: "Maasai Wisdom Under Acacia Trees",
-    author: "Grace Kimaro",
+    author: "Nagib Abdul Dollah",
     excerpt: "Traditional knowledge passed down through generations offers profound insights into living harmoniously with nature...",
     date: "January 2024",
     category: "Culture",
@@ -64,6 +65,7 @@ const stories = [
 ];
 
 const SafariGuides = () => {
+  const navigate = useNavigate();
 
   return (
     <section className="py-20 bg-gradient-to-br from-background to-secondary/20">
@@ -139,6 +141,7 @@ const SafariGuides = () => {
               <Card 
                 key={index}
                 className="safari-shadow hover:warm-shadow safari-transition border-0 group cursor-pointer"
+                onClick={() => navigate("/blog")}
               >
                 <CardContent className="p-6 space-y-3">
                   <div className="flex items-center justify-between">
@@ -164,7 +167,15 @@ const SafariGuides = () => {
                     <span>{story.date}</span>
                   </div>
                   
-                  <Button variant="ghost" size="sm" className="w-full text-safari-teal hover:text-safari-teal">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="w-full text-safari-teal hover:text-safari-teal"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      navigate("/blog");
+                    }}
+                  >
                     Read Full Story →
                   </Button>
                 </CardContent>

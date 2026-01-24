@@ -199,7 +199,7 @@ Message: ${formData.message}`;
                     </div>
                     <div>
                       <div className="font-semibold">Call Us</div>
-                      <div className="text-muted-foreground">+255 123 456 789</div>
+                      <div className="text-muted-foreground">+255 765 131 391</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -208,7 +208,7 @@ Message: ${formData.message}`;
                     </div>
                     <div>
                       <div className="font-semibold">Email Us</div>
-                      <div className="text-muted-foreground">info@namirtours.com</div>
+                      <div className="text-muted-foreground">namirtourtravel@gmail.com</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -217,7 +217,7 @@ Message: ${formData.message}`;
                     </div>
                     <div>
                       <div className="font-semibold">Visit Our Office</div>
-                      <div className="text-muted-foreground">Arusha, Tanzania</div>
+                      <div className="text-muted-foreground">Dar es Salaam, Tanzania</div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">

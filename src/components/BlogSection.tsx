@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, ArrowRight, BookOpen } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const blogPosts = [
   {
@@ -18,7 +19,7 @@ const blogPosts = [
     id: 2,
     title: "The Great Migration: Nature's Greatest Spectacle",
     excerpt: "Witness millions of wildebeest, zebras, and gazelles traverse the Serengeti ecosystem in one of nature's most incredible displays...",
-    author: "Joseph Mwalimu",
+    author: "Azim Murtaza Fidahussein",
     date: "March 10, 2024",
     category: "Wildlife",
     readTime: "10 min read",
@@ -28,7 +29,7 @@ const blogPosts = [
     id: 3,
     title: "Climbing Kilimanjaro: A Complete Guide",
     excerpt: "Everything you need to know about conquering Africa's highest peak, from route selection to altitude acclimatization and what to pack...",
-    author: "Daniel Mollel",
+    author: "Julio John",
     date: "March 5, 2024",
     category: "Adventure",
     readTime: "12 min read",
@@ -38,7 +39,7 @@ const blogPosts = [
     id: 4,
     title: "Zanzibar: Beyond the Beaches",
     excerpt: "Discover the rich history, spice plantations, and cultural treasures of this exotic island paradise off Tanzania's coast...",
-    author: "Grace Kimaro",
+    author: "Nagib Abdul Dollah",
     date: "February 28, 2024",
     category: "Culture",
     readTime: "7 min read",
@@ -47,6 +48,8 @@ const blogPosts = [
 ];
 
 const BlogSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -71,6 +74,7 @@ const BlogSection = () => {
               key={post.id} 
               className="group overflow-hidden safari-shadow hover:warm-shadow safari-transition animate-safari-scale-in border-0 cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => navigate("/blog")}
             >
               <div className="relative overflow-hidden">
                 <img 
@@ -113,6 +117,10 @@ const BlogSection = () => {
                   variant="ghost" 
                   size="sm" 
                   className="w-full text-safari-teal hover:text-safari-teal group-hover:bg-safari-teal/10"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    navigate("/blog");
+                  }}
                 >
                   Read More
                   <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 safari-transition" />
@@ -124,7 +132,7 @@ const BlogSection = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="px-8">
+          <Button variant="outline" size="lg" className="px-8" onClick={() => navigate("/blog")}>
             View All Articles
             <BookOpen className="h-5 w-5 ml-2" />
           </Button>

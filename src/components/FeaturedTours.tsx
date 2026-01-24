@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Clock, Users, Star, MapPin } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import serengetiImage from "@/assets/serengeti-tour.jpg";
 import kilimanjaroImage from "@/assets/kilimanjaro-tour.jpg";
 import ngorongoroImage from "@/assets/ngorongoro-tour.jpg";
@@ -58,6 +59,8 @@ const tours = [
 ];
 
 const FeaturedTours = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -160,9 +163,9 @@ const FeaturedTours = () => {
 
         {/* View All Tours Button */}
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg" className="px-8">
+          <Button variant="hero" size="lg" className="px-8" onClick={() => navigate("/tours")}>
             View All Tours
-            <MapPin className="h-5 w-5" />
+            <MapPin className="h-5 w-5 ml-2" />
           </Button>
         </div>
       </div>

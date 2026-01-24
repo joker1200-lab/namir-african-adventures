@@ -22,11 +22,11 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <img 
                 src={namirLogo} 
-                alt="Namir Tour & Safari" 
+                alt="Namir Tours & Travel" 
                 className="h-12 w-12 rounded-full object-cover"
               />
               <div>
-                <h3 className="text-xl font-bold">Namir Tour & Safari</h3>
+                <h3 className="text-xl font-bold">Namir Tours & Travel</h3>
                 <p className="text-sm opacity-90">Authentic Tanzania Adventures</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 opacity-80" />
-                <span className="opacity-80">+255 123 456 789</span>
+                <span className="opacity-80">+255 765 131 391</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 opacity-80" />
@@ -88,7 +88,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 opacity-80 mt-0.5" />
-                <span className="opacity-80">Arusha, Tanzania<br />East Africa</span>
+                <span className="opacity-80">Dar es Salaam, Tanzania<br />East Africa</span>
               </div>
             </div>
             
@@ -130,7 +130,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-primary-foreground/20 mt-6 pt-6 text-center text-sm opacity-80">
-          <p>&copy; 2024 Namir Tour & Safari. All rights reserved. | Made with ❤️ for Tanzania Safari Adventures</p>
+          <p>&copy; 2024 Namir Tours & Travel. All rights reserved. | Made with ❤️ for Tanzania Safari Adventures</p>
         </div>
       </div>
     </footer>
