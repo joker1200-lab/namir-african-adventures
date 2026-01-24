@@ -16,7 +16,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hello! 👋 Welcome to Namir Tour & Safari! I'm here to help you plan your perfect Tanzania adventure. How can I assist you today?",
+      text: "Hello! 👋 Welcome to Namir Tours & Travel! I'm here to help you plan your perfect Tanzania adventure. How can I assist you today?",
       isUser: false,
       timestamp: new Date()
     }
@@ -51,14 +51,14 @@ const Chatbot = () => {
     }
     
     if (message.includes("contact") || message.includes("phone") || message.includes("email")) {
-      return "📞 You can reach us at:\n• Phone: +255 123 456 789\n• Email: info@namirtours.com\n• Emergency: +255 987 654 321\n\nOur office hours are Mon-Fri 8AM-6PM EAT. Would you like me to connect you with a safari specialist?";
+      return "📞 You can reach us at:\n• Phone: +255 765 131 391\n• Email: namirtourtravel@gmail.com\n\nOur office hours are Mon-Fri 8AM-6PM EAT. Would you like me to connect you with a safari specialist?";
     }
     
     if (message.includes("hello") || message.includes("hi")) {
       return "Hello! 😊 Great to meet you! I'm excited to help you discover the magic of Tanzania. Are you interested in wildlife safaris, Mount Kilimanjaro climbing, or beach relaxation in Zanzibar?";
     }
     
-    return "Thanks for your message! 🌟 I'd love to help you plan your Tanzania adventure. For detailed information about our safari packages, climbing expeditions, or to speak with our expert team, please call +255 123 456 789 or email info@namirtours.com. What specific aspects of Tanzania interest you most?";
+    return "Thanks for your message! 🌟 I'd love to help you plan your Tanzania adventure. For detailed information about our safari packages, climbing expeditions, or to speak with our expert team, please call +255 765 131 391 or email namirtourtravel@gmail.com. What specific aspects of Tanzania interest you most?";
   };
 
   const sendMessage = () => {
